@@ -137,7 +137,6 @@ button:hover {
   .grid-wrapper {
     display: block;
     max-width: 350px;
-    margin-top: 150px;
   }
 
   #bot-left {
@@ -146,5 +145,9 @@ button:hover {
 
   #bot-right {
     border-radius: 0px 0px 10px 10px;
+  }
+
+  body {
+    height: 100%;
   }
 }
