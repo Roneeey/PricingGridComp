@@ -22,12 +22,12 @@ body {
   font-family: 'Karla', serif;
   font-size: 16px;
   color: white;
-  width: 100vw;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
+  margin: 0;
+  min-height: 100vh;
   background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -38,8 +38,8 @@ ul {
 
 .grid-wrapper {
   display: grid;
-  max-width: 625px;
-  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  grid-template-columns: repeat(2, 300px);
   grid-template-rows: 1fr;
 }
 
@@ -133,7 +133,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 690px) {
   .grid-wrapper {
     display: block;
     max-width: 350px;
